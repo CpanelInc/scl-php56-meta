@@ -136,7 +136,7 @@ sed -e 's/@SCL@/%{scl}/g' %{SOURCE0} \
 
 %changelog
 * Fri Mar 06 2015 S. Kurt Newman <kurt.newman@cpanel.net> - 1.1-7
-- Updated for PHP 5.6
+- Updated for PHP 5.6 
 
 * Mon Mar 31 2014 Honza Horak <hhorak@redhat.com> - 1.1-6
 - Fix path typo in README
