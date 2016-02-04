@@ -14,9 +14,9 @@
 
 Summary:       Package that installs PHP 5.6
 Name:          %scl_name
-Version:       1.1
+Version:       5.6.18
 Vendor:        cPanel, Inc.
-Release:       8%{?dist}
+Release:       1%{?dist}
 Group:         Development/Languages
 License:       GPLv2+
 
@@ -140,6 +140,9 @@ sed -e 's/@SCL@/%{scl_macro_base}%{scl_name_version}/g' -e "s/@VERSION@/${tmp_ve
 
 
 %changelog
+* Thu Feb 04 2016 Jacob Perkins <jacob.perkins@cpanel.net> - 5.6.18-1
+- Updated PHP Version
+
 * Wed Jun  3 2015 S. Kurt Newman <kurt.newman@cpanel.net> - 1.1-8
 - Fix macros for namespaces that contain hyphens (-); ZC-560
 
