@@ -14,7 +14,7 @@
 
 Summary:       Package that installs PHP 5.6
 Name:          %scl_name
-Version:       5.6.18
+Version:       5.6.19
 Vendor:        cPanel, Inc.
 Release:       1%{?dist}
 Group:         Development/Languages
@@ -140,6 +140,9 @@ sed -e 's/@SCL@/%{scl_macro_base}%{scl_name_version}/g' -e "s/@VERSION@/${tmp_ve
 
 
 %changelog
+* Fri Mar 04 2016 Jacob Perkins <jacob.perkins@cpanel.net> - 5.6.19-1
+- Updated PHP Version
+
 * Thu Feb 04 2016 Jacob Perkins <jacob.perkins@cpanel.net> - 5.6.18-1
 - Updated PHP Version
 
