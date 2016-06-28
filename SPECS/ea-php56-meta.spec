@@ -14,10 +14,10 @@
 
 Summary:       Package that installs PHP 5.6
 Name:          %scl_name
-Version:       5.6.22
+Version:       5.6.23
 Vendor:        cPanel, Inc.
 # Doing release_prefix this way for Release allows for OBS-proof versioning, See EA-4586 for more details
-%define release_prefix 3
+%define release_prefix 1
 Release: %{release_prefix}%{?dist}.cpanel
 Group:         Development/Languages
 License:       GPLv2+
@@ -142,6 +142,9 @@ sed -e 's/@SCL@/%{scl_macro_base}%{scl_name_version}/g' -e "s/@VERSION@/${tmp_ve
 
 
 %changelog
+* Mon Jun 27 2016 Jacob Perkins <jacob.perkins@cpanel.net> - 5.6.23-1
+- Updated PHP version
+
 * Mon Jun 20 2016 Dan Muey <dan@cpanel.net> - 5.6.22-3
 - EA-4383: Update Release value to OBS-proof versioning
 
