@@ -14,7 +14,7 @@
 
 Summary:       Package that installs PHP 5.6
 Name:          %scl_name
-Version:       5.6.28
+Version:       5.6.29
 Vendor:        cPanel, Inc.
 # Doing release_prefix this way for Release allows for OBS-proof versioning, See EA-4586 for more details
 %define release_prefix 1
@@ -142,6 +142,9 @@ sed -e 's/@SCL@/%{scl_macro_base}%{scl_name_version}/g' -e "s/@VERSION@/${tmp_ve
 
 
 %changelog
+* Fri Dec 9 2016 Jacob Perkins <jacob.perkins@cpanel.net> - 5.6.29-1
+- Updated PHP version
+
 * Thu Nov 10 2016 Jacob Perkins <jacob.perkins@cpanel.net> - 5.6.28-1
 - Updated PHP version
 
