@@ -14,10 +14,10 @@
 
 Summary:       Package that installs PHP 5.6
 Name:          %scl_name
-Version:       5.6.32
+Version:       5.6.33
 Vendor:        cPanel, Inc.
 # Doing release_prefix this way for Release allows for OBS-proof versioning, See EA-4586 for more details
-%define release_prefix 2
+%define release_prefix 1
 Release: %{release_prefix}%{?dist}.cpanel
 Group:         Development/Languages
 License:       GPLv2+
@@ -161,11 +161,14 @@ sed -e 's/@SCL@/%{scl_macro_base}%{scl_name_version}/g' -e "s/@VERSION@/${tmp_ve
 
 
 %changelog
+* Fri Jan 05 2018 Cory McIntire <cory@cpanel.net> - 5.6.33-1
+- Updated to version 5.6.33 via update_pkg.pl (EA-7082)
+
 * Fri Nov 03 2017 Dan Muey <dan@cpanel.net> - 5.6.32-2
 - EA-3999: adjust files to get better cleanup on uninstall
 
 * Fri Oct 27 2017 Jacob Perkins <jacob.perkins@cpanel.net> - 5.6.32-1
-- EA-6931: Updated to version 5.6.32 
+- EA-6931: Updated to version 5.6.32
 
 * Thu Jul 06 2017 Cory McIntire <cory@cpanel.net> - 5.6.31-1
 - Updated to version 5.6.31 via update_pkg.pl (EA-6514)
@@ -216,7 +219,7 @@ sed -e 's/@SCL@/%{scl_macro_base}%{scl_name_version}/g' -e "s/@VERSION@/${tmp_ve
 - Fix macros for namespaces that contain hyphens (-); ZC-560
 
 * Fri Mar 06 2015 S. Kurt Newman <kurt.newman@cpanel.net> - 1.1-7
-- Updated for PHP 5.6 
+- Updated for PHP 5.6
 
 * Mon Mar 31 2014 Honza Horak <hhorak@redhat.com> - 1.1-6
 - Fix path typo in README
