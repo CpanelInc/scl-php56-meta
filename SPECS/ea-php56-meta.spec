@@ -17,7 +17,7 @@ Name:          %scl_name
 Version:       5.6.40
 Vendor:        cPanel, Inc.
 # Doing release_prefix this way for Release allows for OBS-proof versioning, See EA-4586 for more details
-%define release_prefix 5
+%define release_prefix 6
 Release: %{release_prefix}%{?dist}.cpanel
 Group:         Development/Languages
 License:       GPLv2+
@@ -183,6 +183,9 @@ mkdir -p %{buildroot}/opt/cpanel/%{scl}/root/usr/share/locale
 
 
 %changelog
+* Tue Dec 28 2021 Dan Muey <dan@cpanel.net> - 5.6.40-6
+- ZC-9589: Update DISABLE_BUILD to match OBS
+
 * Mon Jun 28 2021 Travis Holloway <t.holloway@cpanel.net> - 5.6.40-5
 - EA-9013: Disable %check section
 
